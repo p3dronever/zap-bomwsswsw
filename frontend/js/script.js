@@ -81,7 +81,7 @@ const handleLogin = (event) => {
     user.color = getRandomColor()
     login.style.display = "none"
     chat.style.display = "flex"
-    websocket = new WebSocket("wss://zap-bom1.onrender.com")
+    websocket = new WebSocket("ws://localhost:8080")
     websocket.onmessage = processMessage
 }
 
